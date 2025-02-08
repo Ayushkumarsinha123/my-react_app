@@ -1,4 +1,6 @@
- function movieCards ({movie}) {
+import React from 'react';
+
+export function MovieCards ({movie}) {
 
     function onFavoriteClick() {
           alert("clicked")
@@ -22,4 +24,4 @@
       )
  }
 
- export default movieCards
+ 
