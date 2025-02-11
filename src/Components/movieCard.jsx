@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../css/MovieCard.css"
 export function MovieCards ({movie}) {
 
     function onFavoriteClick() {
@@ -9,7 +9,7 @@ export function MovieCards ({movie}) {
       return (
         <div className="movie-card">
           <div className="movie-poster">
-            <img src={movie.url} title={movie.title}></img>
+            <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} title={movie.title}></img>
             <div className="movie-overlay" >
               <button className="favorite-btn" onClick={onFavoriteClick}>
               💗
